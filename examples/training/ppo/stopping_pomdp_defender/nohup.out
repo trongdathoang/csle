@@ -1,0 +1,750 @@
+/home/ubuntu/anaconda3/envs/py39/lib/python3.9/site-packages/gymnasium/envs/registration.py:734: UserWarning: [33mWARN: The environment is being initialised with render_mode='rgb_array' that is not in the possible render_modes ([]).[0m
+  logger.warn(
+/home/ubuntu/anaconda3/envs/py39/lib/python3.9/site-packages/stable_baselines3/common/vec_env/vec_monitor.py:44: UserWarning: The environment is already wrapped with a `Monitor` wrapperbut you are wrapping it with a `VecMonitor` wrapper, the `Monitor` statistics will beoverwritten by the `VecMonitor` ones.
+  warnings.warn(
+/home/ubuntu/anaconda3/envs/py39/lib/python3.9/site-packages/stable_baselines3/ppo/ppo.py:155: UserWarning: You have specified a mini-batch size of 64, but because the `RolloutBuffer` is of size `n_steps * n_envs = 1096`, after every 17 untruncated mini-batches, there will be a truncated mini-batch of size 8
+We recommend using a `batch_size` that is a factor of `n_steps * n_envs`.
+Info: (n_steps=1096 and n_envs=1)
+  warnings.warn(
+Training iteration: 0, seed:399, progress: 1.0%
+[EVAL] Training iteration: 0, Avg R:-5.167, Running_avg_100_R: -5.17, Avg T:4.0, Running_avg_100_T: 4.0, Avg pi*: 2.3, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 0.068
+Training iteration: 1, seed:399, progress: 1.0%
+Training iteration: 2, seed:399, progress: 2.0%
+Training iteration: 3, seed:399, progress: 3.0%
+Training iteration: 4, seed:399, progress: 4.0%
+Training iteration: 5, seed:399, progress: 4.0%
+Training iteration: 6, seed:399, progress: 5.0%
+Training iteration: 7, seed:399, progress: 6.0%
+Training iteration: 8, seed:399, progress: 7.0%
+Training iteration: 9, seed:399, progress: 7.0%
+Training iteration: 10, seed:399, progress: 8.0%
+[EVAL] Training iteration: 10, Avg R:9.933, Running_avg_100_R: 2.38, Avg T:7.9, Running_avg_100_T: 5.95, Avg pi*: 8.6, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 0.591
+Training iteration: 11, seed:399, progress: 9.0%
+Training iteration: 12, seed:399, progress: 9.0%
+Training iteration: 13, seed:399, progress: 10.0%
+Training iteration: 14, seed:399, progress: 11.0%
+Training iteration: 15, seed:399, progress: 12.0%
+Training iteration: 16, seed:399, progress: 12.0%
+Training iteration: 17, seed:399, progress: 13.0%
+Training iteration: 18, seed:399, progress: 14.0%
+Training iteration: 19, seed:399, progress: 15.0%
+Training iteration: 20, seed:399, progress: 15.0%
+[EVAL] Training iteration: 20, Avg R:10.867, Running_avg_100_R: 5.21, Avg T:8.1, Running_avg_100_T: 6.67, Avg pi*: 9.85, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 1.122
+Training iteration: 21, seed:399, progress: 16.0%
+Training iteration: 22, seed:399, progress: 17.0%
+Training iteration: 23, seed:399, progress: 18.0%
+Training iteration: 24, seed:399, progress: 18.0%
+Training iteration: 25, seed:399, progress: 19.0%
+Training iteration: 26, seed:399, progress: 20.0%
+Training iteration: 27, seed:399, progress: 20.0%
+Training iteration: 28, seed:399, progress: 21.0%
+Training iteration: 29, seed:399, progress: 22.0%
+Training iteration: 30, seed:399, progress: 23.0%
+[EVAL] Training iteration: 30, Avg R:8.817, Running_avg_100_R: 6.11, Avg T:7.4, Running_avg_100_T: 6.85, Avg pi*: 9.75, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 1.642
+Training iteration: 31, seed:399, progress: 23.0%
+Training iteration: 32, seed:399, progress: 24.0%
+Training iteration: 33, seed:399, progress: 25.0%
+Training iteration: 34, seed:399, progress: 26.0%
+Training iteration: 35, seed:399, progress: 26.0%
+Training iteration: 36, seed:399, progress: 27.0%
+Training iteration: 37, seed:399, progress: 28.0%
+Training iteration: 38, seed:399, progress: 28.0%
+Training iteration: 39, seed:399, progress: 29.0%
+Training iteration: 40, seed:399, progress: 30.0%
+[EVAL] Training iteration: 40, Avg R:8.067, Running_avg_100_R: 6.5, Avg T:7.7, Running_avg_100_T: 7.02, Avg pi*: 9.4, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 2.175
+Training iteration: 41, seed:399, progress: 31.0%
+Training iteration: 42, seed:399, progress: 31.0%
+Training iteration: 43, seed:399, progress: 32.0%
+Training iteration: 44, seed:399, progress: 33.0%
+Training iteration: 45, seed:399, progress: 34.0%
+Training iteration: 46, seed:399, progress: 34.0%
+Training iteration: 47, seed:399, progress: 35.0%
+Training iteration: 48, seed:399, progress: 36.0%
+Training iteration: 49, seed:399, progress: 37.0%
+Training iteration: 50, seed:399, progress: 37.0%
+[EVAL] Training iteration: 50, Avg R:10.533, Running_avg_100_R: 7.18, Avg T:9.9, Running_avg_100_T: 7.5, Avg pi*: 10.6, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 2.704
+Training iteration: 51, seed:399, progress: 38.0%
+Training iteration: 52, seed:399, progress: 39.0%
+Training iteration: 53, seed:399, progress: 39.0%
+Training iteration: 54, seed:399, progress: 40.0%
+Training iteration: 55, seed:399, progress: 41.0%
+Training iteration: 56, seed:399, progress: 42.0%
+Training iteration: 57, seed:399, progress: 42.0%
+Training iteration: 58, seed:399, progress: 43.0%
+Training iteration: 59, seed:399, progress: 44.0%
+Training iteration: 60, seed:399, progress: 45.0%
+[EVAL] Training iteration: 60, Avg R:9.483, Running_avg_100_R: 7.5, Avg T:9.2, Running_avg_100_T: 7.74, Avg pi*: 10.55, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 3.235
+Training iteration: 61, seed:399, progress: 45.0%
+Training iteration: 62, seed:399, progress: 46.0%
+Training iteration: 63, seed:399, progress: 47.0%
+Training iteration: 64, seed:399, progress: 47.0%
+Training iteration: 65, seed:399, progress: 48.0%
+Training iteration: 66, seed:399, progress: 49.0%
+Training iteration: 67, seed:399, progress: 50.0%
+Training iteration: 68, seed:399, progress: 50.0%
+Training iteration: 69, seed:399, progress: 51.0%
+Training iteration: 70, seed:399, progress: 52.0%
+[EVAL] Training iteration: 70, Avg R:6.75, Running_avg_100_R: 7.41, Avg T:7.3, Running_avg_100_T: 7.69, Avg pi*: 7.5, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 3.773
+Training iteration: 71, seed:399, progress: 53.0%
+Training iteration: 72, seed:399, progress: 53.0%
+Training iteration: 73, seed:399, progress: 54.0%
+Training iteration: 74, seed:399, progress: 55.0%
+Training iteration: 75, seed:399, progress: 56.0%
+Training iteration: 76, seed:399, progress: 56.0%
+Training iteration: 77, seed:399, progress: 57.0%
+Training iteration: 78, seed:399, progress: 58.0%
+Training iteration: 79, seed:399, progress: 58.0%
+Training iteration: 80, seed:399, progress: 59.0%
+[EVAL] Training iteration: 80, Avg R:10.133, Running_avg_100_R: 7.71, Avg T:9.8, Running_avg_100_T: 7.92, Avg pi*: 10.15, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 4.31
+Training iteration: 81, seed:399, progress: 60.0%
+Training iteration: 82, seed:399, progress: 61.0%
+Training iteration: 83, seed:399, progress: 61.0%
+Training iteration: 84, seed:399, progress: 62.0%
+Training iteration: 85, seed:399, progress: 63.0%
+Training iteration: 86, seed:399, progress: 64.0%
+Traceback (most recent call last):
+  File "/home/ubuntu/csle/examples/training/ppo/stopping_pomdp_defender/run_vs_random_attacker_v_001.py", line 106, in <module>
+    experiment_execution = agent.train()
+  File "/home/ubuntu/anaconda3/envs/py39/lib/python3.9/site-packages/csle_agents/agents/ppo/ppo_agent.py", line 186, in train
+    model.learn(total_timesteps=self.experiment_config.hparams[
+  File "/home/ubuntu/anaconda3/envs/py39/lib/python3.9/site-packages/stable_baselines3/ppo/ppo.py", line 311, in learn
+    return super().learn(
+  File "/home/ubuntu/anaconda3/envs/py39/lib/python3.9/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 323, in learn
+    continue_training = self.collect_rollouts(self.env, callback, self.rollout_buffer, n_rollout_steps=self.n_steps)
+  File "/home/ubuntu/anaconda3/envs/py39/lib/python3.9/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 202, in collect_rollouts
+    actions, values, log_probs = self.policy(obs_tensor)
+  File "/home/ubuntu/anaconda3/envs/py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/py39/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/anaconda3/envs/py39/lib/python3.9/site-packages/stable_baselines3/common/policies.py", line 655, in forward
+    actions = distribution.get_actions(deterministic=deterministic)
+  File "/home/ubuntu/anaconda3/envs/py39/lib/python3.9/site-packages/stable_baselines3/common/distributions.py", line 89, in get_actions
+    return self.sample()
+  File "/home/ubuntu/anaconda3/envs/py39/lib/python3.9/site-packages/stable_baselines3/common/distributions.py", line 298, in sample
+    return self.distribution.sample()
+  File "/home/ubuntu/anaconda3/envs/py39/lib/python3.9/site-packages/torch/distributions/categorical.py", line 134, in sample
+    samples_2d = torch.multinomial(probs_2d, sample_shape.numel(), True).T
+KeyboardInterrupt
+/home/ubuntu/anaconda3/envs/py39/lib/python3.9/site-packages/gymnasium/envs/registration.py:734: UserWarning: [33mWARN: The environment is being initialised with render_mode='rgb_array' that is not in the possible render_modes ([]).[0m
+  logger.warn(
+/home/ubuntu/anaconda3/envs/py39/lib/python3.9/site-packages/stable_baselines3/common/vec_env/vec_monitor.py:44: UserWarning: The environment is already wrapped with a `Monitor` wrapperbut you are wrapping it with a `VecMonitor` wrapper, the `Monitor` statistics will beoverwritten by the `VecMonitor` ones.
+  warnings.warn(
+/home/ubuntu/anaconda3/envs/py39/lib/python3.9/site-packages/stable_baselines3/ppo/ppo.py:155: UserWarning: You have specified a mini-batch size of 64, but because the `RolloutBuffer` is of size `n_steps * n_envs = 1096`, after every 17 untruncated mini-batches, there will be a truncated mini-batch of size 8
+We recommend using a `batch_size` that is a factor of `n_steps * n_envs`.
+Info: (n_steps=1096 and n_envs=1)
+  warnings.warn(
+Training iteration: 0, seed:399, progress: 1.0%
+[EVAL] Training iteration: 0, Avg R:-5.167, Running_avg_100_R: -5.17, Avg T:4.0, Running_avg_100_T: 4.0, Avg pi*: 2.3, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 0.043
+Training iteration: 1, seed:399, progress: 1.0%
+Training iteration: 2, seed:399, progress: 2.0%
+Training iteration: 3, seed:399, progress: 3.0%
+Training iteration: 4, seed:399, progress: 4.0%
+Training iteration: 5, seed:399, progress: 4.0%
+Training iteration: 6, seed:399, progress: 5.0%
+Training iteration: 7, seed:399, progress: 6.0%
+Training iteration: 8, seed:399, progress: 7.0%
+Training iteration: 9, seed:399, progress: 7.0%
+Training iteration: 10, seed:399, progress: 8.0%
+[EVAL] Training iteration: 10, Avg R:9.933, Running_avg_100_R: 2.38, Avg T:7.9, Running_avg_100_T: 5.95, Avg pi*: 8.6, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 0.589
+Training iteration: 11, seed:399, progress: 9.0%
+Training iteration: 12, seed:399, progress: 9.0%
+Training iteration: 13, seed:399, progress: 10.0%
+Training iteration: 14, seed:399, progress: 11.0%
+Training iteration: 15, seed:399, progress: 12.0%
+Training iteration: 16, seed:399, progress: 12.0%
+Training iteration: 17, seed:399, progress: 13.0%
+Training iteration: 18, seed:399, progress: 14.0%
+Training iteration: 19, seed:399, progress: 15.0%
+Training iteration: 20, seed:399, progress: 15.0%
+[EVAL] Training iteration: 20, Avg R:10.867, Running_avg_100_R: 5.21, Avg T:8.1, Running_avg_100_T: 6.67, Avg pi*: 9.85, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 1.122
+Training iteration: 21, seed:399, progress: 16.0%
+Training iteration: 22, seed:399, progress: 17.0%
+Training iteration: 23, seed:399, progress: 18.0%
+Training iteration: 24, seed:399, progress: 18.0%
+Training iteration: 25, seed:399, progress: 19.0%
+Training iteration: 26, seed:399, progress: 20.0%
+Training iteration: 27, seed:399, progress: 20.0%
+Training iteration: 28, seed:399, progress: 21.0%
+Training iteration: 29, seed:399, progress: 22.0%
+Training iteration: 30, seed:399, progress: 23.0%
+[EVAL] Training iteration: 30, Avg R:8.817, Running_avg_100_R: 6.11, Avg T:7.4, Running_avg_100_T: 6.85, Avg pi*: 9.75, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 1.661
+Training iteration: 31, seed:399, progress: 23.0%
+Training iteration: 32, seed:399, progress: 24.0%
+Training iteration: 33, seed:399, progress: 25.0%
+Training iteration: 34, seed:399, progress: 26.0%
+Training iteration: 35, seed:399, progress: 26.0%
+Training iteration: 36, seed:399, progress: 27.0%
+Training iteration: 37, seed:399, progress: 28.0%
+Training iteration: 38, seed:399, progress: 28.0%
+Training iteration: 39, seed:399, progress: 29.0%
+Training iteration: 40, seed:399, progress: 30.0%
+[EVAL] Training iteration: 40, Avg R:8.067, Running_avg_100_R: 6.5, Avg T:7.7, Running_avg_100_T: 7.02, Avg pi*: 9.4, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 2.197
+Training iteration: 41, seed:399, progress: 31.0%
+Training iteration: 42, seed:399, progress: 31.0%
+Training iteration: 43, seed:399, progress: 32.0%
+Training iteration: 44, seed:399, progress: 33.0%
+Training iteration: 45, seed:399, progress: 34.0%
+Training iteration: 46, seed:399, progress: 34.0%
+Training iteration: 47, seed:399, progress: 35.0%
+Training iteration: 48, seed:399, progress: 36.0%
+Training iteration: 49, seed:399, progress: 37.0%
+Training iteration: 50, seed:399, progress: 37.0%
+[EVAL] Training iteration: 50, Avg R:10.533, Running_avg_100_R: 7.18, Avg T:9.9, Running_avg_100_T: 7.5, Avg pi*: 10.6, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 2.732
+Training iteration: 51, seed:399, progress: 38.0%
+Training iteration: 52, seed:399, progress: 39.0%
+Training iteration: 53, seed:399, progress: 39.0%
+Training iteration: 54, seed:399, progress: 40.0%
+Training iteration: 55, seed:399, progress: 41.0%
+Training iteration: 56, seed:399, progress: 42.0%
+Training iteration: 57, seed:399, progress: 42.0%
+Training iteration: 58, seed:399, progress: 43.0%
+Training iteration: 59, seed:399, progress: 44.0%
+Training iteration: 60, seed:399, progress: 45.0%
+[EVAL] Training iteration: 60, Avg R:9.483, Running_avg_100_R: 7.5, Avg T:9.2, Running_avg_100_T: 7.74, Avg pi*: 10.55, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 3.278
+Training iteration: 61, seed:399, progress: 45.0%
+Training iteration: 62, seed:399, progress: 46.0%
+Training iteration: 63, seed:399, progress: 47.0%
+Training iteration: 64, seed:399, progress: 47.0%
+Training iteration: 65, seed:399, progress: 48.0%
+Training iteration: 66, seed:399, progress: 49.0%
+Training iteration: 67, seed:399, progress: 50.0%
+Training iteration: 68, seed:399, progress: 50.0%
+Training iteration: 69, seed:399, progress: 51.0%
+Training iteration: 70, seed:399, progress: 52.0%
+[EVAL] Training iteration: 70, Avg R:6.75, Running_avg_100_R: 7.41, Avg T:7.3, Running_avg_100_T: 7.69, Avg pi*: 7.5, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 3.819
+Training iteration: 71, seed:399, progress: 53.0%
+Training iteration: 72, seed:399, progress: 53.0%
+Training iteration: 73, seed:399, progress: 54.0%
+Training iteration: 74, seed:399, progress: 55.0%
+Training iteration: 75, seed:399, progress: 56.0%
+Training iteration: 76, seed:399, progress: 56.0%
+Training iteration: 77, seed:399, progress: 57.0%
+Training iteration: 78, seed:399, progress: 58.0%
+Training iteration: 79, seed:399, progress: 58.0%
+Training iteration: 80, seed:399, progress: 59.0%
+[EVAL] Training iteration: 80, Avg R:10.133, Running_avg_100_R: 7.71, Avg T:9.8, Running_avg_100_T: 7.92, Avg pi*: 10.15, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 4.347
+Training iteration: 81, seed:399, progress: 60.0%
+Training iteration: 82, seed:399, progress: 61.0%
+Training iteration: 83, seed:399, progress: 61.0%
+Training iteration: 84, seed:399, progress: 62.0%
+Training iteration: 85, seed:399, progress: 63.0%
+Training iteration: 86, seed:399, progress: 64.0%
+Training iteration: 87, seed:399, progress: 64.0%
+Training iteration: 88, seed:399, progress: 65.0%
+Training iteration: 89, seed:399, progress: 66.0%
+Training iteration: 90, seed:399, progress: 66.0%
+[EVAL] Training iteration: 90, Avg R:11.5, Running_avg_100_R: 8.09, Avg T:9.0, Running_avg_100_T: 8.03, Avg pi*: 10.1, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 4.88
+Training iteration: 91, seed:399, progress: 67.0%
+Training iteration: 92, seed:399, progress: 68.0%
+Training iteration: 93, seed:399, progress: 69.0%
+Training iteration: 94, seed:399, progress: 69.0%
+Training iteration: 95, seed:399, progress: 70.0%
+Training iteration: 96, seed:399, progress: 71.0%
+Training iteration: 97, seed:399, progress: 72.0%
+Training iteration: 98, seed:399, progress: 72.0%
+Training iteration: 99, seed:399, progress: 73.0%
+Training iteration: 100, seed:399, progress: 74.0%
+[EVAL] Training iteration: 100, Avg R:7.733, Running_avg_100_R: 8.06, Avg T:8.2, Running_avg_100_T: 8.05, Avg pi*: 8.55, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 5.397
+Training iteration: 101, seed:399, progress: 75.0%
+Training iteration: 102, seed:399, progress: 75.0%
+Training iteration: 103, seed:399, progress: 76.0%
+Training iteration: 104, seed:399, progress: 77.0%
+Training iteration: 105, seed:399, progress: 77.0%
+Training iteration: 106, seed:399, progress: 78.0%
+Training iteration: 107, seed:399, progress: 79.0%
+Training iteration: 108, seed:399, progress: 80.0%
+Training iteration: 109, seed:399, progress: 80.0%
+Training iteration: 110, seed:399, progress: 81.0%
+[EVAL] Training iteration: 110, Avg R:13.583, Running_avg_100_R: 8.52, Avg T:12.2, Running_avg_100_T: 8.39, Avg pi*: 13.95, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 5.93
+Training iteration: 111, seed:399, progress: 82.0%
+Training iteration: 112, seed:399, progress: 83.0%
+Training iteration: 113, seed:399, progress: 83.0%
+Training iteration: 114, seed:399, progress: 84.0%
+Training iteration: 115, seed:399, progress: 85.0%
+Training iteration: 116, seed:399, progress: 85.0%
+Training iteration: 117, seed:399, progress: 86.0%
+Training iteration: 118, seed:399, progress: 87.0%
+Training iteration: 119, seed:399, progress: 88.0%
+Training iteration: 120, seed:399, progress: 88.0%
+[EVAL] Training iteration: 120, Avg R:9.35, Running_avg_100_R: 8.58, Avg T:10.3, Running_avg_100_T: 8.54, Avg pi*: 10.7, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 6.45
+Training iteration: 121, seed:399, progress: 89.0%
+Training iteration: 122, seed:399, progress: 90.0%
+Training iteration: 123, seed:399, progress: 91.0%
+Training iteration: 124, seed:399, progress: 91.0%
+Training iteration: 125, seed:399, progress: 92.0%
+Training iteration: 126, seed:399, progress: 93.0%
+Training iteration: 127, seed:399, progress: 94.0%
+Training iteration: 128, seed:399, progress: 94.0%
+Training iteration: 129, seed:399, progress: 95.0%
+Training iteration: 130, seed:399, progress: 96.0%
+[EVAL] Training iteration: 130, Avg R:10.133, Running_avg_100_R: 8.69, Avg T:8.1, Running_avg_100_T: 8.51, Avg pi*: 8.9, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 6.983
+Training iteration: 131, seed:399, progress: 96.0%
+Training iteration: 132, seed:399, progress: 97.0%
+Training iteration: 133, seed:399, progress: 98.0%
+Training iteration: 134, seed:399, progress: 99.0%
+Training iteration: 135, seed:399, progress: 99.0%
+Training iteration: 136, seed:399, progress: 100.0%
+/home/ubuntu/anaconda3/envs/py39/lib/python3.9/site-packages/stable_baselines3/ppo/ppo.py:155: UserWarning: You have specified a mini-batch size of 64, but because the `RolloutBuffer` is of size `n_steps * n_envs = 1096`, after every 17 untruncated mini-batches, there will be a truncated mini-batch of size 8
+We recommend using a `batch_size` that is a factor of `n_steps * n_envs`.
+Info: (n_steps=1096 and n_envs=1)
+  warnings.warn(
+Training iteration: 0, seed:98912, progress: 1.0%
+[EVAL] Training iteration: 0, Avg R:-4.667, Running_avg_100_R: -4.67, Avg T:3.9, Running_avg_100_T: 3.9, Avg pi*: 2.05, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 0.027
+Training iteration: 1, seed:98912, progress: 1.0%
+Training iteration: 2, seed:98912, progress: 2.0%
+Training iteration: 3, seed:98912, progress: 3.0%
+Training iteration: 4, seed:98912, progress: 4.0%
+Training iteration: 5, seed:98912, progress: 4.0%
+Training iteration: 6, seed:98912, progress: 5.0%
+Training iteration: 7, seed:98912, progress: 6.0%
+Training iteration: 8, seed:98912, progress: 7.0%
+Training iteration: 9, seed:98912, progress: 7.0%
+Training iteration: 10, seed:98912, progress: 8.0%
+[EVAL] Training iteration: 10, Avg R:6.717, Running_avg_100_R: 1.02, Avg T:8.7, Running_avg_100_T: 6.3, Avg pi*: 9.55, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 0.558
+Training iteration: 11, seed:98912, progress: 9.0%
+Training iteration: 12, seed:98912, progress: 9.0%
+Training iteration: 13, seed:98912, progress: 10.0%
+Training iteration: 14, seed:98912, progress: 11.0%
+Training iteration: 15, seed:98912, progress: 12.0%
+Training iteration: 16, seed:98912, progress: 12.0%
+Training iteration: 17, seed:98912, progress: 13.0%
+Training iteration: 18, seed:98912, progress: 14.0%
+Training iteration: 19, seed:98912, progress: 15.0%
+Training iteration: 20, seed:98912, progress: 15.0%
+[EVAL] Training iteration: 20, Avg R:10.317, Running_avg_100_R: 4.12, Avg T:9.2, Running_avg_100_T: 7.27, Avg pi*: 10.95, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 1.098
+Training iteration: 21, seed:98912, progress: 16.0%
+Training iteration: 22, seed:98912, progress: 17.0%
+Training iteration: 23, seed:98912, progress: 18.0%
+Training iteration: 24, seed:98912, progress: 18.0%
+Training iteration: 25, seed:98912, progress: 19.0%
+Training iteration: 26, seed:98912, progress: 20.0%
+Training iteration: 27, seed:98912, progress: 20.0%
+Training iteration: 28, seed:98912, progress: 21.0%
+Training iteration: 29, seed:98912, progress: 22.0%
+Training iteration: 30, seed:98912, progress: 23.0%
+[EVAL] Training iteration: 30, Avg R:10.7, Running_avg_100_R: 5.77, Avg T:7.7, Running_avg_100_T: 7.37, Avg pi*: 10.55, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 1.635
+Training iteration: 31, seed:98912, progress: 23.0%
+Training iteration: 32, seed:98912, progress: 24.0%
+Training iteration: 33, seed:98912, progress: 25.0%
+Training iteration: 34, seed:98912, progress: 26.0%
+Training iteration: 35, seed:98912, progress: 26.0%
+Training iteration: 36, seed:98912, progress: 27.0%
+Training iteration: 37, seed:98912, progress: 28.0%
+Training iteration: 38, seed:98912, progress: 28.0%
+Training iteration: 39, seed:98912, progress: 29.0%
+Training iteration: 40, seed:98912, progress: 30.0%
+[EVAL] Training iteration: 40, Avg R:8.333, Running_avg_100_R: 6.28, Avg T:6.9, Running_avg_100_T: 7.28, Avg pi*: 7.8, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 2.18
+Training iteration: 41, seed:98912, progress: 31.0%
+Training iteration: 42, seed:98912, progress: 31.0%
+Training iteration: 43, seed:98912, progress: 32.0%
+Training iteration: 44, seed:98912, progress: 33.0%
+Training iteration: 45, seed:98912, progress: 34.0%
+Training iteration: 46, seed:98912, progress: 34.0%
+Training iteration: 47, seed:98912, progress: 35.0%
+Training iteration: 48, seed:98912, progress: 36.0%
+Training iteration: 49, seed:98912, progress: 37.0%
+Training iteration: 50, seed:98912, progress: 37.0%
+[EVAL] Training iteration: 50, Avg R:10.6, Running_avg_100_R: 7.0, Avg T:8.4, Running_avg_100_T: 7.47, Avg pi*: 9.9, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 2.725
+Training iteration: 51, seed:98912, progress: 38.0%
+Training iteration: 52, seed:98912, progress: 39.0%
+Training iteration: 53, seed:98912, progress: 39.0%
+Training iteration: 54, seed:98912, progress: 40.0%
+Training iteration: 55, seed:98912, progress: 41.0%
+Training iteration: 56, seed:98912, progress: 42.0%
+Training iteration: 57, seed:98912, progress: 42.0%
+Training iteration: 58, seed:98912, progress: 43.0%
+Training iteration: 59, seed:98912, progress: 44.0%
+Training iteration: 60, seed:98912, progress: 45.0%
+[EVAL] Training iteration: 60, Avg R:10.767, Running_avg_100_R: 7.54, Avg T:8.4, Running_avg_100_T: 7.6, Avg pi*: 10.7, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 3.26
+Training iteration: 61, seed:98912, progress: 45.0%
+Training iteration: 62, seed:98912, progress: 46.0%
+Training iteration: 63, seed:98912, progress: 47.0%
+Training iteration: 64, seed:98912, progress: 47.0%
+Training iteration: 65, seed:98912, progress: 48.0%
+Training iteration: 66, seed:98912, progress: 49.0%
+Training iteration: 67, seed:98912, progress: 50.0%
+Training iteration: 68, seed:98912, progress: 50.0%
+Training iteration: 69, seed:98912, progress: 51.0%
+Training iteration: 70, seed:98912, progress: 52.0%
+[EVAL] Training iteration: 70, Avg R:11.483, Running_avg_100_R: 8.03, Avg T:9.1, Running_avg_100_T: 7.79, Avg pi*: 9.75, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 3.795
+Training iteration: 71, seed:98912, progress: 53.0%
+Training iteration: 72, seed:98912, progress: 53.0%
+Training iteration: 73, seed:98912, progress: 54.0%
+Training iteration: 74, seed:98912, progress: 55.0%
+Training iteration: 75, seed:98912, progress: 56.0%
+Training iteration: 76, seed:98912, progress: 56.0%
+Training iteration: 77, seed:98912, progress: 57.0%
+Training iteration: 78, seed:98912, progress: 58.0%
+Training iteration: 79, seed:98912, progress: 58.0%
+Training iteration: 80, seed:98912, progress: 59.0%
+[EVAL] Training iteration: 80, Avg R:9.217, Running_avg_100_R: 8.16, Avg T:9.2, Running_avg_100_T: 7.94, Avg pi*: 8.75, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 4.317
+Training iteration: 81, seed:98912, progress: 60.0%
+Training iteration: 82, seed:98912, progress: 61.0%
+Training iteration: 83, seed:98912, progress: 61.0%
+Training iteration: 84, seed:98912, progress: 62.0%
+Training iteration: 85, seed:98912, progress: 63.0%
+Training iteration: 86, seed:98912, progress: 64.0%
+Training iteration: 87, seed:98912, progress: 64.0%
+Training iteration: 88, seed:98912, progress: 65.0%
+Training iteration: 89, seed:98912, progress: 66.0%
+Training iteration: 90, seed:98912, progress: 66.0%
+[EVAL] Training iteration: 90, Avg R:9.783, Running_avg_100_R: 8.32, Avg T:7.9, Running_avg_100_T: 7.94, Avg pi*: 10.4, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 4.858
+Training iteration: 91, seed:98912, progress: 67.0%
+Training iteration: 92, seed:98912, progress: 68.0%
+Training iteration: 93, seed:98912, progress: 69.0%
+Training iteration: 94, seed:98912, progress: 69.0%
+Training iteration: 95, seed:98912, progress: 70.0%
+Training iteration: 96, seed:98912, progress: 71.0%
+Training iteration: 97, seed:98912, progress: 72.0%
+Training iteration: 98, seed:98912, progress: 72.0%
+Training iteration: 99, seed:98912, progress: 73.0%
+Training iteration: 100, seed:98912, progress: 74.0%
+[EVAL] Training iteration: 100, Avg R:8.733, Running_avg_100_R: 8.36, Avg T:7.6, Running_avg_100_T: 7.91, Avg pi*: 8.4, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 5.39
+Training iteration: 101, seed:98912, progress: 75.0%
+Training iteration: 102, seed:98912, progress: 75.0%
+Training iteration: 103, seed:98912, progress: 76.0%
+Training iteration: 104, seed:98912, progress: 77.0%
+Training iteration: 105, seed:98912, progress: 77.0%
+Training iteration: 106, seed:98912, progress: 78.0%
+Training iteration: 107, seed:98912, progress: 79.0%
+Training iteration: 108, seed:98912, progress: 80.0%
+Training iteration: 109, seed:98912, progress: 80.0%
+Training iteration: 110, seed:98912, progress: 81.0%
+[EVAL] Training iteration: 110, Avg R:8.7, Running_avg_100_R: 8.39, Avg T:7.0, Running_avg_100_T: 7.83, Avg pi*: 7.25, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 5.921
+Training iteration: 111, seed:98912, progress: 82.0%
+Training iteration: 112, seed:98912, progress: 83.0%
+Training iteration: 113, seed:98912, progress: 83.0%
+Training iteration: 114, seed:98912, progress: 84.0%
+Training iteration: 115, seed:98912, progress: 85.0%
+Training iteration: 116, seed:98912, progress: 85.0%
+Training iteration: 117, seed:98912, progress: 86.0%
+Training iteration: 118, seed:98912, progress: 87.0%
+Training iteration: 119, seed:98912, progress: 88.0%
+Training iteration: 120, seed:98912, progress: 88.0%
+[EVAL] Training iteration: 120, Avg R:13.383, Running_avg_100_R: 8.77, Avg T:12.0, Running_avg_100_T: 8.15, Avg pi*: 12.9, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 6.461
+Training iteration: 121, seed:98912, progress: 89.0%
+Training iteration: 122, seed:98912, progress: 90.0%
+Training iteration: 123, seed:98912, progress: 91.0%
+Training iteration: 124, seed:98912, progress: 91.0%
+Training iteration: 125, seed:98912, progress: 92.0%
+Training iteration: 126, seed:98912, progress: 93.0%
+Training iteration: 127, seed:98912, progress: 94.0%
+Training iteration: 128, seed:98912, progress: 94.0%
+Training iteration: 129, seed:98912, progress: 95.0%
+Training iteration: 130, seed:98912, progress: 96.0%
+[EVAL] Training iteration: 130, Avg R:9.25, Running_avg_100_R: 8.81, Avg T:8.2, Running_avg_100_T: 8.16, Avg pi*: 10.05, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 6.988
+Training iteration: 131, seed:98912, progress: 96.0%
+Training iteration: 132, seed:98912, progress: 97.0%
+Training iteration: 133, seed:98912, progress: 98.0%
+Training iteration: 134, seed:98912, progress: 99.0%
+Training iteration: 135, seed:98912, progress: 99.0%
+Training iteration: 136, seed:98912, progress: 100.0%
+Training iteration: 0, seed:999, progress: 1.0%
+[EVAL] Training iteration: 0, Avg R:-16.2, Running_avg_100_R: -16.2, Avg T:8.8, Running_avg_100_T: 8.8, Avg pi*: 9.25, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 0.028
+Training iteration: 1, seed:999, progress: 1.0%
+Training iteration: 2, seed:999, progress: 2.0%
+Training iteration: 3, seed:999, progress: 3.0%
+Training iteration: 4, seed:999, progress: 4.0%
+Training iteration: 5, seed:999, progress: 4.0%
+Training iteration: 6, seed:999, progress: 5.0%
+Training iteration: 7, seed:999, progress: 6.0%
+Training iteration: 8, seed:999, progress: 7.0%
+Training iteration: 9, seed:999, progress: 7.0%
+Training iteration: 10, seed:999, progress: 8.0%
+[EVAL] Training iteration: 10, Avg R:10.6, Running_avg_100_R: -2.8, Avg T:10.4, Running_avg_100_T: 9.6, Avg pi*: 10.65, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 0.555
+Training iteration: 11, seed:999, progress: 9.0%
+Training iteration: 12, seed:999, progress: 9.0%
+Training iteration: 13, seed:999, progress: 10.0%
+Training iteration: 14, seed:999, progress: 11.0%
+Training iteration: 15, seed:999, progress: 12.0%
+Training iteration: 16, seed:999, progress: 12.0%
+Training iteration: 17, seed:999, progress: 13.0%
+Training iteration: 18, seed:999, progress: 14.0%
+Training iteration: 19, seed:999, progress: 15.0%
+Training iteration: 20, seed:999, progress: 15.0%
+[EVAL] Training iteration: 20, Avg R:10.35, Running_avg_100_R: 1.58, Avg T:9.3, Running_avg_100_T: 9.5, Avg pi*: 11.0, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 1.084
+Training iteration: 21, seed:999, progress: 16.0%
+Training iteration: 22, seed:999, progress: 17.0%
+Training iteration: 23, seed:999, progress: 18.0%
+Training iteration: 24, seed:999, progress: 18.0%
+Training iteration: 25, seed:999, progress: 19.0%
+Training iteration: 26, seed:999, progress: 20.0%
+Training iteration: 27, seed:999, progress: 20.0%
+Training iteration: 28, seed:999, progress: 21.0%
+Training iteration: 29, seed:999, progress: 22.0%
+Training iteration: 30, seed:999, progress: 23.0%
+[EVAL] Training iteration: 30, Avg R:9.383, Running_avg_100_R: 3.53, Avg T:7.9, Running_avg_100_T: 9.1, Avg pi*: 8.15, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 1.622
+Training iteration: 31, seed:999, progress: 23.0%
+Training iteration: 32, seed:999, progress: 24.0%
+Training iteration: 33, seed:999, progress: 25.0%
+Training iteration: 34, seed:999, progress: 26.0%
+Training iteration: 35, seed:999, progress: 26.0%
+Training iteration: 36, seed:999, progress: 27.0%
+Training iteration: 37, seed:999, progress: 28.0%
+Training iteration: 38, seed:999, progress: 28.0%
+Training iteration: 39, seed:999, progress: 29.0%
+Training iteration: 40, seed:999, progress: 30.0%
+[EVAL] Training iteration: 40, Avg R:8.767, Running_avg_100_R: 4.58, Avg T:9.3, Running_avg_100_T: 9.14, Avg pi*: 10.5, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 2.153
+Training iteration: 41, seed:999, progress: 31.0%
+Training iteration: 42, seed:999, progress: 31.0%
+Training iteration: 43, seed:999, progress: 32.0%
+Training iteration: 44, seed:999, progress: 33.0%
+Training iteration: 45, seed:999, progress: 34.0%
+Training iteration: 46, seed:999, progress: 34.0%
+Training iteration: 47, seed:999, progress: 35.0%
+Training iteration: 48, seed:999, progress: 36.0%
+Training iteration: 49, seed:999, progress: 37.0%
+Training iteration: 50, seed:999, progress: 37.0%
+[EVAL] Training iteration: 50, Avg R:11.8, Running_avg_100_R: 5.78, Avg T:8.1, Running_avg_100_T: 8.97, Avg pi*: 10.0, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 2.679
+Training iteration: 51, seed:999, progress: 38.0%
+Training iteration: 52, seed:999, progress: 39.0%
+Training iteration: 53, seed:999, progress: 39.0%
+Training iteration: 54, seed:999, progress: 40.0%
+Training iteration: 55, seed:999, progress: 41.0%
+Training iteration: 56, seed:999, progress: 42.0%
+Training iteration: 57, seed:999, progress: 42.0%
+Training iteration: 58, seed:999, progress: 43.0%
+Training iteration: 59, seed:999, progress: 44.0%
+Training iteration: 60, seed:999, progress: 45.0%
+[EVAL] Training iteration: 60, Avg R:12.233, Running_avg_100_R: 6.7, Avg T:9.1, Running_avg_100_T: 8.99, Avg pi*: 11.4, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 3.222
+Training iteration: 61, seed:999, progress: 45.0%
+Training iteration: 62, seed:999, progress: 46.0%
+Training iteration: 63, seed:999, progress: 47.0%
+Training iteration: 64, seed:999, progress: 47.0%
+Training iteration: 65, seed:999, progress: 48.0%
+Training iteration: 66, seed:999, progress: 49.0%
+Training iteration: 67, seed:999, progress: 50.0%
+Training iteration: 68, seed:999, progress: 50.0%
+Training iteration: 69, seed:999, progress: 51.0%
+Training iteration: 70, seed:999, progress: 52.0%
+[EVAL] Training iteration: 70, Avg R:8.833, Running_avg_100_R: 6.97, Avg T:9.3, Running_avg_100_T: 9.02, Avg pi*: 11.2, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 3.758
+Training iteration: 71, seed:999, progress: 53.0%
+Training iteration: 72, seed:999, progress: 53.0%
+Training iteration: 73, seed:999, progress: 54.0%
+Training iteration: 74, seed:999, progress: 55.0%
+Training iteration: 75, seed:999, progress: 56.0%
+Training iteration: 76, seed:999, progress: 56.0%
+Training iteration: 77, seed:999, progress: 57.0%
+Training iteration: 78, seed:999, progress: 58.0%
+Training iteration: 79, seed:999, progress: 58.0%
+Training iteration: 80, seed:999, progress: 59.0%
+[EVAL] Training iteration: 80, Avg R:7.417, Running_avg_100_R: 7.02, Avg T:8.8, Running_avg_100_T: 9.0, Avg pi*: 8.95, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 4.277
+Training iteration: 81, seed:999, progress: 60.0%
+Training iteration: 82, seed:999, progress: 61.0%
+Training iteration: 83, seed:999, progress: 61.0%
+Training iteration: 84, seed:999, progress: 62.0%
+Training iteration: 85, seed:999, progress: 63.0%
+Training iteration: 86, seed:999, progress: 64.0%
+Training iteration: 87, seed:999, progress: 64.0%
+Training iteration: 88, seed:999, progress: 65.0%
+Training iteration: 89, seed:999, progress: 66.0%
+Training iteration: 90, seed:999, progress: 66.0%
+[EVAL] Training iteration: 90, Avg R:5.733, Running_avg_100_R: 6.89, Avg T:7.2, Running_avg_100_T: 8.82, Avg pi*: 8.15, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 4.812
+Training iteration: 91, seed:999, progress: 67.0%
+Training iteration: 92, seed:999, progress: 68.0%
+Training iteration: 93, seed:999, progress: 69.0%
+Training iteration: 94, seed:999, progress: 69.0%
+Training iteration: 95, seed:999, progress: 70.0%
+Training iteration: 96, seed:999, progress: 71.0%
+Training iteration: 97, seed:999, progress: 72.0%
+Training iteration: 98, seed:999, progress: 72.0%
+Training iteration: 99, seed:999, progress: 73.0%
+Training iteration: 100, seed:999, progress: 74.0%
+[EVAL] Training iteration: 100, Avg R:8.533, Running_avg_100_R: 7.04, Avg T:7.0, Running_avg_100_T: 8.65, Avg pi*: 8.2, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 5.339
+Training iteration: 101, seed:999, progress: 75.0%
+Training iteration: 102, seed:999, progress: 75.0%
+Training iteration: 103, seed:999, progress: 76.0%
+Training iteration: 104, seed:999, progress: 77.0%
+Training iteration: 105, seed:999, progress: 77.0%
+Training iteration: 106, seed:999, progress: 78.0%
+Training iteration: 107, seed:999, progress: 79.0%
+Training iteration: 108, seed:999, progress: 80.0%
+Training iteration: 109, seed:999, progress: 80.0%
+Training iteration: 110, seed:999, progress: 81.0%
+[EVAL] Training iteration: 110, Avg R:9.067, Running_avg_100_R: 7.21, Avg T:7.8, Running_avg_100_T: 8.58, Avg pi*: 9.6, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 5.887
+Training iteration: 111, seed:999, progress: 82.0%
+Training iteration: 112, seed:999, progress: 83.0%
+Training iteration: 113, seed:999, progress: 83.0%
+Training iteration: 114, seed:999, progress: 84.0%
+Training iteration: 115, seed:999, progress: 85.0%
+Training iteration: 116, seed:999, progress: 85.0%
+Training iteration: 117, seed:999, progress: 86.0%
+Training iteration: 118, seed:999, progress: 87.0%
+Training iteration: 119, seed:999, progress: 88.0%
+Training iteration: 120, seed:999, progress: 88.0%
+[EVAL] Training iteration: 120, Avg R:8.333, Running_avg_100_R: 7.3, Avg T:8.5, Running_avg_100_T: 8.58, Avg pi*: 8.5, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 6.409
+Training iteration: 121, seed:999, progress: 89.0%
+Training iteration: 122, seed:999, progress: 90.0%
+Training iteration: 123, seed:999, progress: 91.0%
+Training iteration: 124, seed:999, progress: 91.0%
+Training iteration: 125, seed:999, progress: 92.0%
+Training iteration: 126, seed:999, progress: 93.0%
+Training iteration: 127, seed:999, progress: 94.0%
+Training iteration: 128, seed:999, progress: 94.0%
+Training iteration: 129, seed:999, progress: 95.0%
+Training iteration: 130, seed:999, progress: 96.0%
+[EVAL] Training iteration: 130, Avg R:10.05, Running_avg_100_R: 7.49, Avg T:9.9, Running_avg_100_T: 8.67, Avg pi*: 10.6, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 6.953
+Training iteration: 131, seed:999, progress: 96.0%
+Training iteration: 132, seed:999, progress: 97.0%
+Training iteration: 133, seed:999, progress: 98.0%
+Training iteration: 134, seed:999, progress: 99.0%
+Training iteration: 135, seed:999, progress: 99.0%
+Training iteration: 136, seed:999, progress: 100.0%
+/home/ubuntu/anaconda3/envs/py39/lib/python3.9/site-packages/gymnasium/envs/registration.py:734: UserWarning: [33mWARN: The environment is being initialised with render_mode='rgb_array' that is not in the possible render_modes ([]).[0m
+  logger.warn(
+/home/ubuntu/anaconda3/envs/py39/lib/python3.9/site-packages/stable_baselines3/common/vec_env/vec_monitor.py:44: UserWarning: The environment is already wrapped with a `Monitor` wrapperbut you are wrapping it with a `VecMonitor` wrapper, the `Monitor` statistics will beoverwritten by the `VecMonitor` ones.
+  warnings.warn(
+/home/ubuntu/anaconda3/envs/py39/lib/python3.9/site-packages/stable_baselines3/ppo/ppo.py:155: UserWarning: You have specified a mini-batch size of 64, but because the `RolloutBuffer` is of size `n_steps * n_envs = 1096`, after every 17 untruncated mini-batches, there will be a truncated mini-batch of size 8
+We recommend using a `batch_size` that is a factor of `n_steps * n_envs`.
+Info: (n_steps=1096 and n_envs=1)
+  warnings.warn(
+Training iteration: 0, seed:399, progress: 1.0%
+[EVAL] Training iteration: 0, Avg R:-5.167, Running_avg_100_R: -5.17, Avg T:4.0, Running_avg_100_T: 4.0, Avg pi*: 2.3, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 0.043
+Training iteration: 1, seed:399, progress: 1.0%
+Training iteration: 2, seed:399, progress: 2.0%
+Training iteration: 3, seed:399, progress: 3.0%
+Training iteration: 4, seed:399, progress: 4.0%
+Training iteration: 5, seed:399, progress: 4.0%
+Training iteration: 6, seed:399, progress: 5.0%
+Training iteration: 7, seed:399, progress: 6.0%
+Training iteration: 8, seed:399, progress: 7.0%
+Training iteration: 9, seed:399, progress: 7.0%
+Training iteration: 10, seed:399, progress: 8.0%
+[EVAL] Training iteration: 10, Avg R:9.933, Running_avg_100_R: 2.38, Avg T:7.9, Running_avg_100_T: 5.95, Avg pi*: 8.6, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 0.571
+Training iteration: 11, seed:399, progress: 9.0%
+Training iteration: 12, seed:399, progress: 9.0%
+Training iteration: 13, seed:399, progress: 10.0%
+Training iteration: 14, seed:399, progress: 11.0%
+Training iteration: 15, seed:399, progress: 12.0%
+Training iteration: 16, seed:399, progress: 12.0%
+Training iteration: 17, seed:399, progress: 13.0%
+Training iteration: 18, seed:399, progress: 14.0%
+Training iteration: 19, seed:399, progress: 15.0%
+Training iteration: 20, seed:399, progress: 15.0%
+[EVAL] Training iteration: 20, Avg R:10.867, Running_avg_100_R: 5.21, Avg T:8.1, Running_avg_100_T: 6.67, Avg pi*: 9.85, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 5.299
+Training iteration: 21, seed:399, progress: 16.0%
+Training iteration: 22, seed:399, progress: 17.0%
+Training iteration: 23, seed:399, progress: 18.0%
+Training iteration: 24, seed:399, progress: 18.0%
+Training iteration: 25, seed:399, progress: 19.0%
+Training iteration: 26, seed:399, progress: 20.0%
+Training iteration: 27, seed:399, progress: 20.0%
+Training iteration: 28, seed:399, progress: 21.0%
+Training iteration: 29, seed:399, progress: 22.0%
+Training iteration: 30, seed:399, progress: 23.0%
+[EVAL] Training iteration: 30, Avg R:8.817, Running_avg_100_R: 6.11, Avg T:7.4, Running_avg_100_T: 6.85, Avg pi*: 9.75, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 11.627
+Training iteration: 31, seed:399, progress: 23.0%
+Training iteration: 32, seed:399, progress: 24.0%
+Training iteration: 33, seed:399, progress: 25.0%
+Training iteration: 34, seed:399, progress: 26.0%
+Training iteration: 35, seed:399, progress: 26.0%
+Training iteration: 36, seed:399, progress: 27.0%
+Training iteration: 37, seed:399, progress: 28.0%
+Training iteration: 38, seed:399, progress: 28.0%
+Training iteration: 39, seed:399, progress: 29.0%
+Training iteration: 40, seed:399, progress: 30.0%
+[EVAL] Training iteration: 40, Avg R:8.067, Running_avg_100_R: 6.5, Avg T:7.7, Running_avg_100_T: 7.02, Avg pi*: 9.4, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 18.044
+Training iteration: 41, seed:399, progress: 31.0%
+Training iteration: 42, seed:399, progress: 31.0%
+Training iteration: 43, seed:399, progress: 32.0%
+Training iteration: 44, seed:399, progress: 33.0%
+Training iteration: 45, seed:399, progress: 34.0%
+Training iteration: 46, seed:399, progress: 34.0%
+Training iteration: 47, seed:399, progress: 35.0%
+Training iteration: 48, seed:399, progress: 36.0%
+Training iteration: 49, seed:399, progress: 37.0%
+Training iteration: 50, seed:399, progress: 37.0%
+[EVAL] Training iteration: 50, Avg R:10.533, Running_avg_100_R: 7.18, Avg T:9.9, Running_avg_100_T: 7.5, Avg pi*: 10.6, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 24.525
+Training iteration: 51, seed:399, progress: 38.0%
+Training iteration: 52, seed:399, progress: 39.0%
+Training iteration: 53, seed:399, progress: 39.0%
+Training iteration: 54, seed:399, progress: 40.0%
+Training iteration: 55, seed:399, progress: 41.0%
+Training iteration: 56, seed:399, progress: 42.0%
+Training iteration: 57, seed:399, progress: 42.0%
+Training iteration: 58, seed:399, progress: 43.0%
+Training iteration: 59, seed:399, progress: 44.0%
+Training iteration: 60, seed:399, progress: 45.0%
+[EVAL] Training iteration: 60, Avg R:9.483, Running_avg_100_R: 7.5, Avg T:9.2, Running_avg_100_T: 7.74, Avg pi*: 10.55, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 30.856
+Training iteration: 61, seed:399, progress: 45.0%
+Training iteration: 62, seed:399, progress: 46.0%
+Training iteration: 63, seed:399, progress: 47.0%
+Training iteration: 64, seed:399, progress: 47.0%
+Training iteration: 65, seed:399, progress: 48.0%
+Training iteration: 66, seed:399, progress: 49.0%
+Training iteration: 67, seed:399, progress: 50.0%
+Training iteration: 68, seed:399, progress: 50.0%
+Training iteration: 69, seed:399, progress: 51.0%
+Training iteration: 70, seed:399, progress: 52.0%
+[EVAL] Training iteration: 70, Avg R:6.75, Running_avg_100_R: 7.41, Avg T:7.3, Running_avg_100_T: 7.69, Avg pi*: 7.5, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 37.046
+Training iteration: 71, seed:399, progress: 53.0%
+Training iteration: 72, seed:399, progress: 53.0%
+Training iteration: 73, seed:399, progress: 54.0%
+Training iteration: 74, seed:399, progress: 55.0%
+Training iteration: 75, seed:399, progress: 56.0%
+Training iteration: 76, seed:399, progress: 56.0%
+Training iteration: 77, seed:399, progress: 57.0%
+Training iteration: 78, seed:399, progress: 58.0%
+Training iteration: 79, seed:399, progress: 58.0%
+Training iteration: 80, seed:399, progress: 59.0%
+[EVAL] Training iteration: 80, Avg R:10.133, Running_avg_100_R: 7.71, Avg T:9.8, Running_avg_100_T: 7.92, Avg pi*: 10.15, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 43.086
+Training iteration: 81, seed:399, progress: 60.0%
+Training iteration: 82, seed:399, progress: 61.0%
+Training iteration: 83, seed:399, progress: 61.0%
+Training iteration: 84, seed:399, progress: 62.0%
+Training iteration: 85, seed:399, progress: 63.0%
+Training iteration: 86, seed:399, progress: 64.0%
+Training iteration: 87, seed:399, progress: 64.0%
+Training iteration: 88, seed:399, progress: 65.0%
+Training iteration: 89, seed:399, progress: 66.0%
+Training iteration: 90, seed:399, progress: 66.0%
+[EVAL] Training iteration: 90, Avg R:11.5, Running_avg_100_R: 8.09, Avg T:9.0, Running_avg_100_T: 8.03, Avg pi*: 10.1, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 49.201
+Training iteration: 91, seed:399, progress: 67.0%
+Training iteration: 92, seed:399, progress: 68.0%
+Training iteration: 93, seed:399, progress: 69.0%
+Training iteration: 94, seed:399, progress: 69.0%
+Training iteration: 95, seed:399, progress: 70.0%
+Training iteration: 96, seed:399, progress: 71.0%
+Training iteration: 97, seed:399, progress: 72.0%
+Training iteration: 98, seed:399, progress: 72.0%
+Training iteration: 99, seed:399, progress: 73.0%
+Training iteration: 100, seed:399, progress: 74.0%
+[EVAL] Training iteration: 100, Avg R:7.733, Running_avg_100_R: 8.06, Avg T:8.2, Running_avg_100_T: 8.05, Avg pi*: 8.55, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 55.445
+Training iteration: 101, seed:399, progress: 75.0%
+Training iteration: 102, seed:399, progress: 75.0%
+Training iteration: 103, seed:399, progress: 76.0%
+Training iteration: 104, seed:399, progress: 77.0%
+Training iteration: 105, seed:399, progress: 77.0%
+Training iteration: 106, seed:399, progress: 78.0%
+Training iteration: 107, seed:399, progress: 79.0%
+Training iteration: 108, seed:399, progress: 80.0%
+Training iteration: 109, seed:399, progress: 80.0%
+Training iteration: 110, seed:399, progress: 81.0%
+[EVAL] Training iteration: 110, Avg R:13.583, Running_avg_100_R: 8.52, Avg T:12.2, Running_avg_100_T: 8.39, Avg pi*: 13.95, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 61.758
+Training iteration: 111, seed:399, progress: 82.0%
+Training iteration: 112, seed:399, progress: 83.0%
+Training iteration: 113, seed:399, progress: 83.0%
+Training iteration: 114, seed:399, progress: 84.0%
+Training iteration: 115, seed:399, progress: 85.0%
+Training iteration: 116, seed:399, progress: 85.0%
+Training iteration: 117, seed:399, progress: 86.0%
+Training iteration: 118, seed:399, progress: 87.0%
+Training iteration: 119, seed:399, progress: 88.0%
+Training iteration: 120, seed:399, progress: 88.0%
+[EVAL] Training iteration: 120, Avg R:9.35, Running_avg_100_R: 8.58, Avg T:10.3, Running_avg_100_T: 8.54, Avg pi*: 10.7, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 67.854
+Training iteration: 121, seed:399, progress: 89.0%
+Training iteration: 122, seed:399, progress: 90.0%
+Training iteration: 123, seed:399, progress: 91.0%
+Training iteration: 124, seed:399, progress: 91.0%
+Training iteration: 125, seed:399, progress: 92.0%
+Training iteration: 126, seed:399, progress: 93.0%
+Training iteration: 127, seed:399, progress: 94.0%
+Training iteration: 128, seed:399, progress: 94.0%
+Training iteration: 129, seed:399, progress: 95.0%
+Training iteration: 130, seed:399, progress: 96.0%
+[EVAL] Training iteration: 130, Avg R:10.133, Running_avg_100_R: 8.69, Avg T:8.1, Running_avg_100_T: 8.51, Avg pi*: 8.9, Avg random R:-1.0, Avg heuristic R:-1.0, time elapsed (min): 74.141
+Training iteration: 131, seed:399, progress: 96.0%
+Training iteration: 132, seed:399, progress: 97.0%
+Training iteration: 133, seed:399, progress: 98.0%
+Training iteration: 134, seed:399, progress: 99.0%

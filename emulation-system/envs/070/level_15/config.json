@@ -466,7 +466,7 @@
         "time_step_len_seconds": 30,
         "version": "0.7.0"
     },
-    "hostname": "p120-n6.kthopen.kth.se",
+    "hostname": "ip-10-0-0-15",
     "id": -1,
     "image": null,
     "kafka_config": {
@@ -1000,7 +1000,7 @@
                         }
                     ]
                 ],
-                "num_cpus": 16,
+                "num_cpus": 8,
                 "physical_host_ip": ""
             },
             {

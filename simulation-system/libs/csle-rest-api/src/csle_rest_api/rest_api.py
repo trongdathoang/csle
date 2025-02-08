@@ -1,6 +1,7 @@
-from flask import Flask
+from flask import Flask, send_from_directory
 from flask_cors import CORS
 from . import socketio
+import os
 import csle_common.constants.constants as constants
 from csle_common.logging.log import Logger
 from csle_common.util.cluster_util import ClusterUtil
@@ -75,7 +76,6 @@ from csle_rest_api.resources.logs.routes import logs_bp
 from csle_rest_api.resources.create_emulation.routes import create_emulation_bp
 from csle_rest_api.web_sockets.container_terminal.container_terminal import get_container_terminal_bp
 import csle_rest_api.constants.constants as api_constants
-
 
 def create_app(static_folder: str):
     """

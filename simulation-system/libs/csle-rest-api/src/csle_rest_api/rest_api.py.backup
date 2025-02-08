@@ -1,0 +1,123 @@
+from flask import Flask, send_from_directory
+from flask_cors import CORS
+from . import socketio
+import os
+import csle_common.constants.constants as constants
+from csle_common.logging.log import Logger
+from csle_common.util.cluster_util import ClusterUtil
+from csle_rest_api.pages.emulations.routes import get_emulations_page_bp
+from csle_rest_api.pages.simulations.routes import get_simulations_page_bp
+from csle_rest_api.pages.monitoring.routes import get_monitoring_page_bp
+from csle_rest_api.pages.traces.routes import get_traces_page_bp
+from csle_rest_api.pages.emulation_statistics.routes import get_emulation_statistics_page_bp
+from csle_rest_api.pages.system_models.routes import get_system_models_page_bp
+from csle_rest_api.pages.about.routes import get_about_page_bp
+from csle_rest_api.pages.login.routes import get_login_page_bp
+from csle_rest_api.pages.register.routes import get_register_page_bp
+from csle_rest_api.pages.downloads.routes import get_downloads_page_bp
+from csle_rest_api.pages.images.routes import get_images_page_bp
+from csle_rest_api.pages.jobs.routes import get_jobs_page_bp
+from csle_rest_api.pages.policies.routes import get_policies_page_bp
+from csle_rest_api.pages.policy_examination.routes import get_policy_examination_page_bp
+from csle_rest_api.pages.training.routes import get_training_page_bp
+from csle_rest_api.pages.sdn_controllers.routes import get_sdn_controllers_page_bp
+from csle_rest_api.pages.control_plane.routes import get_control_plane_page_bp
+from csle_rest_api.pages.user_admin.routes import get_user_admin_page_bp
+from csle_rest_api.pages.container_terminal.routes import get_container_terminal_page_bp
+from csle_rest_api.pages.system_admin.routes import get_system_admin_page_bp
+from csle_rest_api.pages.logs_admin.routes import get_logs_admin_page_bp
+from csle_rest_api.pages.server_cluster.routes import get_server_cluster_page_bp
+from csle_rest_api.pages.create_emulation.routes import get_new_emulation_page_bp
+from csle_rest_api.resources.node_exporter.routes import node_exporter_bp
+from csle_rest_api.resources.prometheus.routes import prometheus_bp
+from csle_rest_api.resources.cadvisor.routes import cadvisor_bp
+from csle_rest_api.resources.pgadmin.routes import pgadmin_bp
+from csle_rest_api.resources.grafana.routes import grafana_bp
+from csle_rest_api.resources.cluster_status.routes import cluster_status_bp
+from csle_rest_api.resources.nginx.routes import nginx_bp
+from csle_rest_api.resources.postgresql.routes import postgresql_bp
+from csle_rest_api.resources.flask.routes import flask_bp
+from csle_rest_api.resources.docker.routes import docker_bp
+from csle_rest_api.resources.emulations.routes import emulations_bp
+from csle_rest_api.resources.emulation_executions.routes import emulation_executions_bp
+from csle_rest_api.resources.simulations.routes import simulations_bp
+from csle_rest_api.resources.images.routes import images_bp
+from csle_rest_api.resources.emulation_traces.routes import emulation_traces_bp
+from csle_rest_api.resources.simulation_traces.routes import simulation_traces_bp
+from csle_rest_api.resources.emulation_statistics.routes import emulation_statistics_bp
+from csle_rest_api.resources.system_models.routes import system_models_bp
+from csle_rest_api.resources.gaussian_mixture_system_models.routes import gaussian_mixture_system_models_bp
+from csle_rest_api.resources.empirical_system_models.routes import empirical_system_models_bp
+from csle_rest_api.resources.mcmc_system_models.routes import mcmc_system_models_bp
+from csle_rest_api.resources.gp_system_models.routes import gp_system_models_bp
+from csle_rest_api.resources.experiments.routes import experiments_bp
+from csle_rest_api.resources.multi_threshold_policies.routes import multi_threshold_policies_bp
+from csle_rest_api.resources.linear_threshold_policies.routes import linear_threshold_policies_bp
+from csle_rest_api.resources.ppo_policies.routes import ppo_policies_bp
+from csle_rest_api.resources.dqn_policies.routes import dqn_policies_bp
+from csle_rest_api.resources.fnn_w_softmax_policies.routes import fnn_w_softmax_policies_bp
+from csle_rest_api.resources.tabular_policies.routes import tabular_policies_bp
+from csle_rest_api.resources.vector_policies.routes import vector_policies_bp
+from csle_rest_api.resources.alpha_vec_policies.routes import alpha_vec_policies_bp
+from csle_rest_api.resources.training_jobs.routes import training_jobs_bp
+from csle_rest_api.resources.data_collection_jobs.routes import data_collection_jobs_bp
+from csle_rest_api.resources.system_identification_jobs.routes import system_identification_jobs_bp
+from csle_rest_api.resources.emulation_simulation_traces.routes import emulation_simulation_traces_bp
+from csle_rest_api.resources.sdn_controllers.routes import sdn_controllers_bp
+from csle_rest_api.resources.file.routes import file_bp
+from csle_rest_api.resources.login.routes import login_bp
+from csle_rest_api.resources.traces_datasets.routes import traces_datasets_bp
+from csle_rest_api.resources.statistics_datasets.routes import statistics_datasets_bp
+from csle_rest_api.resources.users.routes import users_bp
+from csle_rest_api.resources.config.routes import config_bp
+from csle_rest_api.resources.server_cluster.routes import server_cluster_bp
+from csle_rest_api.resources.version.routes import version_bp
+from csle_rest_api.resources.logs.routes import logs_bp
+from csle_rest_api.resources.create_emulation.routes import create_emulation_bp
+from csle_rest_api.web_sockets.container_terminal.container_terminal import get_container_terminal_bp
+import csle_rest_api.constants.constants as api_constants
+
+
+def create_app(static_folder: str):
+    """
+    Creates and initializes the Flask App
+
+    :param static_folder: path to the folder to serve static resources
+    :return: the flask app
+    """
+    app = Flask(__name__, static_url_path='', static_folder=static_folder)
+    CORS(app) # allow CORS for all domains on all routes.
+    app.config[api_constants.MGMT_WEBAPP.CORS_HEADERS] = api_constants.MGMT_WEBAPP.CONTENT_TYPE
+
+    # Add root route to serve index.html for client-side routing
+    @app.route('/', defaults={'path': ''})
+    @app.route('/<path:path>')
+    def serve(path):
+        if path and os.path.exists(os.path.join(app.static_folder, path)):
+            return send_from_directory(app.static_folder, path)
+        return send_from_directory(app.static_folder, 'index.html')
+
+    # Register all blueprints
+    [... keep all your existing blueprint registrations ...]
+
+    socketio.init_app(app)
+    return app
+
+
+def start_server(static_folder: str, port: int = 7777, num_threads: int = 100, host: str = "0.0.0.0",
+                 https: bool = False) -> None:
+    """
+    Creates the flask app and serves it
+
+    :param static_folder: path to the folder to server static resources
+    :param port: the port for serving
+    :param num_threads: number of threads for serving
+    :param host: the host string for serving
+    :param https: boolean flag whether to use https or not
+
+    :return: None
+    """
+    ClusterUtil.set_config_parameters_from_config_file()
+    Logger.__call__().get_logger().info(f"Starting web server, listening on port: {port}")
+    app = create_app(static_folder=static_folder)
+    socketio.run(app, debug=False, port=port, host=host)

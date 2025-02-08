@@ -1,0 +1,60 @@
+Starting execution of static action sequences, iteration:0, T:13, I_t:1
+t:0, a1: id:1,name:Continue,ips:[],index:-1, a2: id:62,name:Continue,ips:[],index:-1
+Executing attacker action:Continue on machine index: -1, ips:['15.4.1.0/24', '15.4.2.0/24']
+Machines: []
+t:1, a1: id:1,name:Continue,ips:[],index:-1, a2: id:19,name:TCP SYN (Stealth) Scan,ips:['15.4.1.0/24', '15.4.2.0/24'],index:-1
+Executing attacker action:TCP SYN (Stealth) Scan on machine index: -1, ips:['15.4.1.0/24', '15.4.2.0/24']
+Machines: []
+Running NMAP scan on container: 15.4.1.191, commands: sudo nmap -sS -p- --min-rate 100000 --max-retries 1 -T5 -n -oX EmulationAttackerActionId.TCP_SYN_STEALTH_SCAN_ALL_-1_15.4.1.0_24.xml 15.4.1.0/24,sudo nmap -sS -p- --min-rate 100000 --max-retries 1 -T5 -n -oX EmulationAttackerActionId.TCP_SYN_STEALTH_SCAN_ALL_-1_15.4.2.0_24.xml 15.4.2.0/24
+Connecting to host: 172.18.0.5
+Connected successfully
+t:2, a1: id:1,name:Continue,ips:[],index:-1, a2: id:11,name:SSH dictionary attack for username=pw,ips:[],index:0
+Executing attacker action:SSH dictionary attack for username=pw on machine index: 0, ips:['15.4.1.0/24', '15.4.2.0/24']
+Machines: []
+Running NMAP scan on container: 15.4.1.191, commands: sudo nmap -p 22 --script ssh-brute --script-args userdb=/SecLists/Usernames/top-usernames-shortlist.txt,passdb=/SecLists/Usernames/top-usernames-shortlist.txt,ssh-brute.timeout=8s,brute.firstonly=true --min-rate 100000 --max-retries 1 -T5 -n -oX EmulationAttackerActionId.SSH_SAME_USER_PASS_DICTIONARY_HOST_0_15.4.1.0_24.xml 15.4.1.0/24,sudo nmap -p 22 --script ssh-brute --script-args userdb=/SecLists/Usernames/top-usernames-shortlist.txt,passdb=/SecLists/Usernames/top-usernames-shortlist.txt,ssh-brute.timeout=8s,brute.firstonly=true --min-rate 100000 --max-retries 1 -T5 -n -oX EmulationAttackerActionId.SSH_SAME_USER_PASS_DICTIONARY_HOST_0_15.4.2.0_24.xml 15.4.2.0/24
+t:3, a1: id:1,name:Continue,ips:[],index:-1, a2: id:10,name:Telnet dictionary attack for username=pw,ips:[],index:0
+Executing attacker action:Telnet dictionary attack for username=pw on machine index: 0, ips:['15.4.1.0/24', '15.4.2.0/24']
+Machines: []
+Running NMAP scan on container: 15.4.1.191, commands: sudo nmap -p 23 --script telnet-brute --script-args userdb=/SecLists/Usernames/top-usernames-shortlist.txt,passdb=/SecLists/Usernames/top-usernames-shortlist.txt,telnet-brute.timeout=8s,brute.firstonly=true --min-rate 100000 --max-retries 1 -T5 -n -oX EmulationAttackerActionId.TELNET_SAME_USER_PASS_DICTIONARY_HOST_0_15.4.1.0_24.xml 15.4.1.0/24,sudo nmap -p 23 --script telnet-brute --script-args userdb=/SecLists/Usernames/top-usernames-shortlist.txt,passdb=/SecLists/Usernames/top-usernames-shortlist.txt,telnet-brute.timeout=8s,brute.firstonly=true --min-rate 100000 --max-retries 1 -T5 -n -oX EmulationAttackerActionId.TELNET_SAME_USER_PASS_DICTIONARY_HOST_0_15.4.2.0_24.xml 15.4.2.0/24
+t:4, a1: id:1,name:Continue,ips:[],index:-1, a2: id:12,name:FTP dictionary attack for username=pw,ips:[],index:0
+Executing attacker action:FTP dictionary attack for username=pw on machine index: 0, ips:['15.4.1.0/24', '15.4.2.0/24']
+Machines: []
+Running NMAP scan on container: 15.4.1.191, commands: sudo nmap -p 21 --script ftp-brute --script-args userdb=/SecLists/Usernames/top-usernames-shortlist.txt,passdb=/SecLists/Usernames/top-usernames-shortlist.txt,ftp-brute.timeout=8s,brute.firstonly=true --min-rate 100000 --max-retries 1 -T5 -n -oX EmulationAttackerActionId.FTP_SAME_USER_PASS_DICTIONARY_HOST_0_15.4.1.0_24.xml 15.4.1.0/24,sudo nmap -p 21 --script ftp-brute --script-args userdb=/SecLists/Usernames/top-usernames-shortlist.txt,passdb=/SecLists/Usernames/top-usernames-shortlist.txt,ftp-brute.timeout=8s,brute.firstonly=true --min-rate 100000 --max-retries 1 -T5 -n -oX EmulationAttackerActionId.FTP_SAME_USER_PASS_DICTIONARY_HOST_0_15.4.2.0_24.xml 15.4.2.0/24
+t:5, a1: id:1,name:Continue,ips:[],index:-1, a2: id:19,name:TCP SYN (Stealth) Scan,ips:['15.4.1.0/24', '15.4.2.0/24'],index:-1
+Executing attacker action:TCP SYN (Stealth) Scan on machine index: -1, ips:['15.4.1.0/24', '15.4.2.0/24']
+Machines: []
+Running NMAP scan on container: 15.4.1.191, commands: sudo nmap -sS -p- --min-rate 100000 --max-retries 1 -T5 -n -oX EmulationAttackerActionId.TCP_SYN_STEALTH_SCAN_ALL_-1_15.4.1.0_24.xml 15.4.1.0/24,sudo nmap -sS -p- --min-rate 100000 --max-retries 1 -T5 -n -oX EmulationAttackerActionId.TCP_SYN_STEALTH_SCAN_ALL_-1_15.4.2.0_24.xml 15.4.2.0/24
+t:6, a1: id:1,name:Continue,ips:[],index:-1, a2: id:54,name:ShellShock Explolit,ips:[],index:0
+Executing attacker action:ShellShock Explolit on machine index: 0, ips:['15.4.1.0/24', '15.4.2.0/24']
+Machines: []
+There was an error executing the shellshock exploit: No JumpHost found for ip: 15.4.1.0/24, topology: , ValueError('No JumpHost found for ip: 15.4.1.0/24, topology: ')
+There was an error executing the shellshock exploit: No JumpHost found for ip: 15.4.2.0/24, topology: , ValueError('No JumpHost found for ip: 15.4.2.0/24, topology: ')
+The Shellshock exploit against machine: 15.4.1.0/24 was unsuccessful
+Uncaught exception
+Traceback (most recent call last):
+  File "/home/ubuntu/csle/examples/data_collection/static_sequences/level_4/run.py", line 127, in <module>
+    run()
+  File "/home/ubuntu/csle/examples/data_collection/static_sequences/level_4/run.py", line 115, in run
+    Emulator.run_action_sequences(emulation_env_config=emulation_env_config, attacker_sequence=attacker_sequence,
+  File "/home/ubuntu/anaconda3/envs/py39/lib/python3.9/site-packages/csle_system_identification/emulator.py", line 180, in run_action_sequences
+    emulation_trace, s = Emulator.run_actions(
+  File "/home/ubuntu/anaconda3/envs/py39/lib/python3.9/site-packages/csle_system_identification/emulator.py", line 265, in run_actions
+    s_prime = Attacker.attacker_transition(s=s, attacker_action=attacker_action)
+  File "/home/ubuntu/anaconda3/envs/py39/lib/python3.9/site-packages/csle_attacker/attacker.py", line 22, in attacker_transition
+    return EmulatedAttacker.attacker_transition(s=s, attacker_action=attacker_action)
+  File "/home/ubuntu/anaconda3/envs/py39/lib/python3.9/site-packages/csle_attacker/emulation/emulated_attacker.py", line 34, in attacker_transition
+    return EmulatedAttacker.attacker_exploit_action(s=s, a=attacker_action)
+  File "/home/ubuntu/anaconda3/envs/py39/lib/python3.9/site-packages/csle_attacker/emulation/emulated_attacker.py", line 139, in attacker_exploit_action
+    return ExploitMiddleware.execute_shellshock(s=s, a=a)
+  File "/home/ubuntu/anaconda3/envs/py39/lib/python3.9/site-packages/csle_attacker/emulation/exploit_middleware.py", line 166, in execute_shellshock
+    s_prime.attacker_obs_state.sort_machines()
+  File "/home/ubuntu/anaconda3/envs/py39/lib/python3.9/site-packages/csle_common/dao/emulation_observation/attacker/emulation_attacker_observation_state.py", line 65, in sort_machines
+    self.machines = sorted(self.machines, key=lambda x: int(x.ips[0].rsplit(".", 1)[-1]), reverse=False)
+  File "/home/ubuntu/anaconda3/envs/py39/lib/python3.9/site-packages/csle_common/dao/emulation_observation/attacker/emulation_attacker_observation_state.py", line 65, in <lambda>
+    self.machines = sorted(self.machines, key=lambda x: int(x.ips[0].rsplit(".", 1)[-1]), reverse=False)
+ValueError: invalid literal for int() with base 10: '0/24'
+Exception ignored in: <module 'threading' from '/home/ubuntu/anaconda3/envs/py39/lib/python3.9/threading.py'>
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/envs/py39/lib/python3.9/threading.py", line 1477, in _shutdown
+    lock.acquire()
+KeyboardInterrupt: 
